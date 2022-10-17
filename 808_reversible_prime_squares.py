@@ -40,10 +40,35 @@ def isPalindrome(x):
     else:
         return False
 
-def reversiblePrimeSquares():
+def isWholeNumber(x):
+    return x % 1 == 0
+
+def isPrime(x):
+    for y in range(len(x)):
+        z = x / y
+        if z > 1 and isWholeNumber(z) == True:
+            return True
+        # Needs work
+
+def isPrimeSquare(x):
+    for i in range(len(x)):
+    # Incomplete
+
+def checkSatisfiesConditions(x):
+    if isPalindrome(x) == True and isPrimeSquare(x) == True
+        return True
+    # Incomplete
+
+
+def reversiblePrimeSquares(x):
+    currentNumber = 0
+    reversiblePrimeSquares = []
+
     while True:
-        currentNumber = 0
-        revPrimeSquareCount = 0
-        if revPrimeSquareCount == 51:
+        if len(reversiblePrimeSquares) == 51:
             break
+        if checkSatisfiesConditions(x) == True:
+            reversiblePrimeSquares.append(x)
+    return sum(reversiblePrimeSquares)
+        
     
