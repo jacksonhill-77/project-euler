@@ -1,0 +1,37 @@
+class Answer:
+    def __init__(self, givenNumber):
+
+        def isEven(number):
+            if number % 2 == 0:
+                return True
+
+        def generateEvenFibonnaci():
+            evenFibonnaciNumbers = []
+            x = 1
+            y = 1
+            z = 0
+            while True:
+                if x > givenNumber:
+                    break
+                z = x + y
+                x = y
+                y = z
+                if isEven(z):
+                    evenFibonnaciNumbers.append(z)
+            return(evenFibonnaciNumbers)
+
+        def sumListContents():
+            return sum(generateEvenFibonnaci())
+            
+        def runTest():
+            return sumListContents()
+
+
+        self.runTest = runTest()
+
+x = Answer(4000000)
+print(x.runTest)
+
+
+
+
