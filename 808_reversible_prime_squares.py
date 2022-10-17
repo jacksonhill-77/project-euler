@@ -11,3 +11,19 @@ Its reverse is also the square of a prime.
 Find the sum of the first 50 reversible prime squares.
 """
 
+"""
+while loop
+    initialise reversible prime square count
+    if count = 51 
+        break
+    test for 
+        1. if number is palindrome
+            if number.reversed == number
+        2. if number is the square of a prime
+            for i in range(number):
+                test if prime
+                    if so, is this prime^2 == number?
+        3. when reversed, 2. also applies to it
+        if all 3 are true:
+            increment count 
+"""
