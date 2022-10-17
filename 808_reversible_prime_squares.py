@@ -27,3 +27,23 @@ while loop
         if all 3 are true:
             increment count 
 """
+
+def isPalindrome(x):
+    reversedNumber = ""
+    x = str(x)
+    for i in range(len(x), 0, -1):
+        print(i)
+        reversedNumber += x[i-1]
+        print(a)
+    if reversedNumber == x:
+        return True
+    else:
+        return False
+
+def reversiblePrimeSquares():
+    while True:
+        currentNumber = 0
+        revPrimeSquareCount = 0
+        if revPrimeSquareCount == 51:
+            break
+    
